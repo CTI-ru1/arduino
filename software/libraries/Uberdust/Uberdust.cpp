@@ -37,7 +37,7 @@ void Uberdust::sendValue(String capability, int value)
 {
 	char val[VALUE_LENGTH];
 	memset(val, '\0', VALUE_LENGTH);
-	itoa(value, val, 10);
+	itoa(value, val, VALUE_LENGTH);
 	sendValue(capability, String(val));
 }
 
